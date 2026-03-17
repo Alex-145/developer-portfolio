@@ -25,7 +25,7 @@ const Home = ({ onNavigate }) => {
       <div className="home-content">
         <div className="profile-section">
           <div className="profile-image-container">
-            <img src="/profile.jpg" alt="Lino Alex" className="profile-image" />
+            <img src={`${import.meta.env.BASE_URL}profile.jpg`} alt="Lino Alex" className="profile-image" />
             <div className="profile-glow"></div>
           </div>
           
@@ -52,7 +52,7 @@ const Home = ({ onNavigate }) => {
               {showDownloadMenu && (
                 <div className="dropdown-menu">
                   <a 
-                    href="/Lino_Alex_Huamanvilca_Huaylla_CV.pdf" 
+                    href={`${import.meta.env.BASE_URL}Lino_Alex_Huamanvilca_Huaylla_CV.pdf`} 
                     download={`${fullName} CV.pdf`} 
                     className="dropdown-item"
                     onClick={() => setShowDownloadMenu(false)}
@@ -60,7 +60,7 @@ const Home = ({ onNavigate }) => {
                     {t.cvSolo}
                   </a>
                   <a 
-                    href="/Lino_Alex_Huamanvilca_Huaylla_CV_Documentado.pdf" 
+                    href={`${import.meta.env.BASE_URL}Lino_Alex_Huamanvilca_Huaylla_CV_Documentado.pdf`} 
                     download={`${fullName} CV Documentado.pdf`} 
                     className="dropdown-item"
                     onClick={() => setShowDownloadMenu(false)}

@@ -39,7 +39,7 @@ const ProfileInfo = ({ data }) => {
         
         <div className="edu-body">
           <div className="edu-logo-wrapper">
-             <img src="/logoupeu.webp" alt="UPeU Logo" className="edu-logo" />
+             <img src={`${import.meta.env.BASE_URL}logoupeu.webp`} alt="UPeU Logo" className="edu-logo" />
           </div>
           <div className="edu-details">
             <h3 className="edu-degree">{education.degree}</h3>
